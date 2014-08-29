@@ -6,12 +6,37 @@
 	</head>
 	<style>
 		body {
-	 		min-width:150px; 
+	 		min-width: 350px; 
+			min-height 100px;
+			background-color: #602870;
 		}
 	</style>
 	<body>
-		<div class='tabify'>
-			<input type="text" id="tabify-url" class = 'form-control'  placeholder= "New tab destination..."/>
+		<div class="container" style="padding:10px">
+			<div class="row">
+				<div class="col-xs-12" style="padding-bottom:10px">
+					<input type="text" id="tabify-url" class = 'form-control'  placeholder= "chrome://apps"/>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<div class= "btn-group btn-group-justified">
+						<div class="btn-group">
+						<button class="btn btn-default btn-primary" type="button" id="tabify-set">Set</button>
+						</div>
+						<div class="btn-group">
+						<button class="btn btn-default" type="button" id="tabify-reset">Reset</button>	
+						</div>
+						<div class="btn-group">
+						<button class="btn btn-default btn-success" type="button" id = "tabify-power">
+							<span class="glyphicon glyphicon-off"></span>
+							<span id="power-text"></span>
+						</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</body>
